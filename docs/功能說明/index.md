@@ -9,7 +9,7 @@ permalink: /
 
 # MDP.DevKit.OpenAI
 
-MDP.DevKit.OpenAI是.NET版本的開發套件，協助開發人員快速建立OpenAI智能服務的應用系統。
+MDP.DevKit.OpenAI是開源的.NET開發套件，協助開發人員快速建立整合OpenAI智能服務的應用系統。
 
 - 說明文件：[https://clark159.github.io/MDP.DevKit.OpenAI/](https://clark159.github.io/MDP.DevKit.OpenAI/)
 
