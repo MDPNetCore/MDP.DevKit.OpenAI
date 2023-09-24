@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 功能導覽
-parent: OpenAI服務整合
+title: 功能說明
+parent: OpenAI智能服務
 nav_order: 1
 permalink: /
 ---
@@ -9,7 +9,7 @@ permalink: /
 
 # MDP.DevKit.OpenAI
 
-MDP.DevKit.OpenAI是.NET版本的開發套件，協助開發人員快速建立OpenAI服務整合的應用系統。
+MDP.DevKit.OpenAI是.NET版本的開發套件，協助開發人員快速建立OpenAI智能服務的應用系統。
 
 - 說明文件：[https://clark159.github.io/MDP.DevKit.OpenAI/](https://clark159.github.io/MDP.DevKit.OpenAI/)
 
@@ -18,15 +18,11 @@ MDP.DevKit.OpenAI是.NET版本的開發套件，協助開發人員快速建立Op
 
 ## 快速開始
 
-
-## 功能架構
-
-
-## 功能清單
+- [開發一個讀取知識內容來回答問題的程式](https://github.com/Clark159/MDP.DevKit.OpenAI/blob/master/src/MDP.DevKit.OpenAI.Lab/Program.cs)
 
 
 ## 版本更新
 
 ### MDP.DevKit.OpenAI 6.1.5
 
-- 跟隨 MDP.Net核心進版。
+- 跟隨 MDP.Net進版。

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: OpenAI服務整合
+title: OpenAI智能服務
 parent: null
 nav_order: 2
 has_children: true
 ---
 
 
-# OpenAI服務整合
+# OpenAI智能服務
 
 {: .fs-6 .fw-300 }

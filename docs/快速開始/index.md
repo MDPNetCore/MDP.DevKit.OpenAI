@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 快速開始
-parent: OpenAI服務整合 
+parent: OpenAI智能服務 
 nav_order: 2
 has_children: true
 ---
