@@ -2,29 +2,33 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using MDP.Registration;
 
 namespace MDP.DevKit.OpenAI.Accesses
 {
-    [MDP.Registration.Factory<IServiceCollection, RestClientFactorySetting>("MDP.DevKit.OpenAI", "RestClientFactory")]
-    public class RestClientFactoryFactory
+    public class RestClientFactoryFactory : ServiceFactory<IServiceCollection, RestClientFactoryFactory.Setting>
     {
+        // Constructors
+        public RestClientFactoryFactory() : base("MDP.DevKit.OpenAI", "RestClientFactory") { }
+
+
         // Methods
-        public void ConfigureService(IServiceCollection serviceCollection, RestClientFactorySetting restClientFactorySetting)
+        public override void ConfigureService(IServiceCollection serviceCollection, Setting setting)
         {
             #region Contracts
 
             if (serviceCollection == null) throw new ArgumentException($"{nameof(serviceCollection)}=null");
-            if (restClientFactorySetting == null) throw new ArgumentException($"{nameof(restClientFactorySetting)}=null");
+            if (setting == null) throw new ArgumentException($"{nameof(setting)}=null");
 
             #endregion
 
             // RestClientFactory
-            serviceCollection.AddRestClientFactory("MDP.DevKit.OpenAI", restClientFactorySetting.Endpoints);
+            serviceCollection.AddRestClientFactory("MDP.DevKit.OpenAI", setting.Endpoints);
         }
 
 
         // Class
-        public class RestClientFactorySetting
+        public class Setting
         {
             // Properties
             public Dictionary<string, RestClientEndpoint> Endpoints { get; set; } = null;

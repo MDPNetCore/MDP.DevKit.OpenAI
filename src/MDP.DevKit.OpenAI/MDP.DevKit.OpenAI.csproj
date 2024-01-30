@@ -8,7 +8,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="MDP.Registration" Version="6.1.5" />
+    <PackageReference Include="MDP.Registration" Version="6.1.13" />
   </ItemGroup>
 
   <PropertyGroup>
